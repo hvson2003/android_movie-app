@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_film"
+        android:icon="@drawable/baseline_movie_24"
+        android:title="Phim"
+        />
+
+    <item
+        android:id="@+id/action_genre"
+        android:icon="@drawable/baseline_device_hub_24"
+        android:title="Thể loại"
+        />
+
+    <item
+        android:id="@+id/action_history"
+
+        android:icon="@drawable/baseline_history_24"
+        android:title="Lịch sử"
+        />
+
+    <item
+        android:id="@+id/action_action"
+        android:icon="@drawable/baseline_call_to_action_24"
+        android:title="Tác vụ"
+        />
+</menu>

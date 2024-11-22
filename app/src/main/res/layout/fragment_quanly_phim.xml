@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6E8ED"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txt_phim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#13172E"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Phim"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="673dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchview_ql"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_searchview"
+            android:backgroundTint="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:iconifiedByDefault="false"
+            app:queryHint="Nhập tên phim ..." />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ql_phim_recy"
+                android:layout_width="match_parent"
+                android:layout_height="483dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_ql_phim_delete"
+                android:layout_width="58dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button_ql_xoatheloai"
+                android:src="@drawable/baseline_cancel_24"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/img_ql_phim_add"
+                android:layout_width="58dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button_ql_themtheloai"
+                android:src="@drawable/baseline_add_box_24"
+                android:textColor="@color/white"
+                app:tint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

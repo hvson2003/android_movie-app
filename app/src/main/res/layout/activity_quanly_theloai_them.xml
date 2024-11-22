@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#13172E"
+        android:layout_marginBottom="300dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgb_theloai_them_trolai"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#13172E"
+            android:src="@drawable/ic_round_arrow_back_24"
+             />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Thêm thể loại"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_ql_themtheloai_tentheloai"
+        android:layout_width="317dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/custom_ql_chitietphim_edt"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Nhập tên thể loại"
+        android:inputType="text" />
+
+    <ImageButton
+        android:id="@+id/btn_ql_themtheloai_them"
+        android:layout_width="114dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:background="@drawable/them" />
+
+</LinearLayout>

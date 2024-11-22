@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background khi TextView được chọn -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#FF5722" /> <!-- Màu sắc khi được chọn -->
+            <stroke android:width="2dp" android:color="#000000" /> <!-- Viền khi được chọn -->
+            <corners android:radius="6dp" /> <!-- Bo tròn góc -->
+        </shape>
+    </item>
+    <!-- Background khi TextView không được chọn -->
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="#2f2f39" /> <!-- Màu nền mặc định, màu xám nhạt hơn -->
+            <stroke android:width="2dp" android:color="#808080" /> <!-- Viền mặc định, màu xám nhạt hơn -->
+            <corners android:radius="6dp" /> <!-- Bo tròn góc -->
+        </shape>
+    </item>
+</selector>

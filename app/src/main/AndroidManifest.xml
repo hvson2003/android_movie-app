@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_cinema"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_cinema"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android_CK"
+        tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".khachhang.khachhang_dangnhap"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".khachhang.khachhang_hosocanhan"
+            android:exported="false" />
+        <activity
+            android:name=".quanly.quanly_doimatkhau"
+            android:exported="false" />
+        <activity
+            android:name=".quanly.quanly_xoataikhoankhachhang"
+            android:exported="false" />
+        <activity
+            android:name=".khachhang.MovieDetail"
+            android:exported="false" />
+        <activity
+            android:name=".quanly.FilmEdit"
+            android:exported="false" />
+        <activity
+            android:name=".quanly.FilmDetail"
+            android:exported="false" />
+        <activity
+            android:name=".quanly.FilmAdd"
+            android:exported="false" />
+        <activity
+            android:name=".quanly.GenreEdit"
+            android:exported="false" />
+        <activity
+            android:name=".quanly.GenreAdd"
+            android:exported="false" />
+        <activity
+            android:name=".quanly.MainActivity_quanly"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".khachhang.khachhang_quanlytaikhoan"
+            android:exported="false" />
+        <activity
+            android:name=".khachhang.khachhang_doimatkhau"
+            android:exported="false" />
+        <activity
+            android:name=".khachhang.khachHang_quenmatkhau"
+            android:exported="false" />
+        <activity
+            android:name=".khachhang.khachhang_thongtincanhan"
+            android:exported="false" />
+        <activity
+            android:name=".khachhang.khachhang_lichsumuahang"
+            android:exported="false" />
+        <activity
+            android:name=".khachhang.MainActivity_khachhang"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".khachhang.khachhang_dangky"
+            android:exported="false" />
+        <activity
+            android:name=".quanly.ActionReport"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".IntroActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <activity
+            android:name=".khachhang.khachhang_dangnhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

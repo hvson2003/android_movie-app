@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6E8ED"
+    tools:context=".quanly.quanly_xoataikhoankhachhang">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#13172E"
+            android:paddingVertical="20dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_xoatk_quaylai"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xóa tài khoản"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+<!--        </androidx.appcompat.widget.Toolbar>-->
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sv_xoatk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/custom_searchview"
+            android:backgroundTint="#7D7F88"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:iconifiedByDefault="false"
+            app:queryHint="Tìm kiếm tài khoản..." />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="#D32042A5"
+            android:paddingHorizontal="20dp"
+            tools:listitem="@layout/item_user"/>
+    </LinearLayout>
+
+</RelativeLayout>

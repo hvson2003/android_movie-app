@@ -1,0 +1,33 @@
+# Android/IntelliJ/Studio IDE
+.idea/
+*.iml
+
+# Build
+/build/
+*.apk
+*.aar
+*.class
+.gradle/
+.cxx/
+.externalNativeBuild/
+
+# System files
+.DS_Store
+*.log
+
+# Gradle Wrapper
+gradle/wrapper/gradle-wrapper.jar
+
+# Secrets
+app/google-services.json
+*.keystore
+
+# NDK/Native
+obj/
+*.o
+*.so
+*.d
+
+# Lint
+lint/intermediates/
+lint/generated/

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1D2B"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_khachang_lichsu_back"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/textView304"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:gravity="center"
+            android:text="Lịch sử đặt vé"
+            android:textColor="#12CDD9"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLichSuKhachHang"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        tools:listitem="@layout/item_khachhang_lichsu" />
+
+    <TextView
+        android:id="@+id/txt_khachhang_lichsu_tongtien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#1186E3"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:text="Tổng tiền: 0đ"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>
